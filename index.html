@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mensajería Instantánea</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+
+    <div id="contenido">
+        <div class="container">
+            <h1>Mensajería Instantánea Felipe Serrano</h1>
+
+            <div class="row">
+                <!-- Formulario para agregar/editar mensajes -->
+                <div class="six columns">
+                    <label for="tweet">Mensaje:</label>
+                    <form id="formulario">
+                        <textarea id="tweet" class="u-full-width" placeholder="Escribe tu mensaje aquí..."></textarea>
+                        <p id="mensaje-edicion" style="display: none; color: rgb(80, 166, 224);">Editando mensaje...</p>
+                        <input type="submit" id="btn-submit" class="button u-full-width button-primary" value="Agregar">
+                    </form>
+                </div>
+
+                <!-- Lista de mensajes -->
+                <div class="six columns">
+                    <h2>Mensajes</h2>
+                    <ul id="lista-tweets"></ul>
+                </div>
+            </div>
+        </div>
+    </div> <!--#contenido-->
+
+    <script src="js/app.js"></script>
+</body>
+</html>
